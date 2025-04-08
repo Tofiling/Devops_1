@@ -17,12 +17,12 @@ jobs:
           
           - name : instalar depencias
             run: |
-                  cd ejercicioTrackDevops1/ejercicioTrackDevops1-main
+                  cd GitHub/Devops_1
                   pip install -r requirements.txt
 
           - name: Ejecutar pruebas
             run: |
-                  cd ejercicioTrackDevops1/ejercicioTrackDevops1-main
+                  cd GitHub/Devops_1
                   python manage.py test
 
           - name: executing remote ssh commands using password
