@@ -38,7 +38,7 @@ jobs:
           - name: Add SSH Key
             run: |
               mkdir -p ~/.ssh
-              echo "${{ secrets.SSH_KEY }}" > ~/.SSH/ID_RSA
+              echo "${{ secrets.PRIVATE_KEY }}" > ~/.SSH/ID_RSA
               chmod 600 ~/.ssh/id_rsa
 
           - name: Deploy files to server with rsync
